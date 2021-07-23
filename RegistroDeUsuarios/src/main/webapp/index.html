@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="recursos/estiloIndex.css"/>
+        <title>Página de Registro</title>
+    </head>
+    <body>
+    
+    <div class="wrapper">
+        <h1>Formulario de Registro</h1>
+        <!--<form action="/ProyectoPrueba3/Servlet" method="POST">-->
+        <form action="/RegistroDeUsuarios/Servlet?accion=registro" method="POST">
+            <label for="nombre">Nombre
+                <input class="form-input" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required> 
+            </label>
+            
+            <label for="apellido">Apellido
+                <input class="form-input" id="apellido" type="text" name="apellido" placeholder="Ingresa tu apellido" required> 
+             </label>
+             
+             <label for="mail">Mail
+                <input class="form-input" id="mail" type="email" name="mail" placeholder="Ingresa tu mail" required> 
+             </label>
+             
+             <label for="password">Contraseña
+                <input class="form-input" id="password" type="password" name="password" placeholder="Ingresa tu contraseña" required> 
+             </label>
+             
+             <input class="btn-submit" type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+</html>

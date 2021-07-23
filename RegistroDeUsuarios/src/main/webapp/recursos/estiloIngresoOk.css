@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    /*background: linear-gradient(135deg, #ffffff, #626263);*/
+    background: url("nasa-earth2-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 40px;
+}
+main{
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+}
+.text{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 95px;
+}
+.text span{
+    padding: 10px;
+    background-color: rgb(134, 134, 153, 0.5);
+}
+.links{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.links ul{
+    display: inline-block;
+    list-style: none;
+}
+.links li{
+    margin-bottom: 45px;
+}
+.links a{
+    padding: 10px;
+    text-decoration: none;
+}
+.links span{
+    color: white;
+    list-style: none;
+    margin-left: 15px;
+}
+h1, span, i{
+    color: white;
+}
+.links a:hover{
+    background-color: rgb(55, 66, 221, 0.3);
+}
+
