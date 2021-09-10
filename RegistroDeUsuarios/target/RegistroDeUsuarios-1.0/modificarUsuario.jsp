@@ -10,7 +10,7 @@
     <body>
         <div class="wrapper">
         <h1>Actualizar datos</h1>
-        <form action="/RegistroDeUsuarios/Servlet?accion=modificar" method="POST">
+        <form action="${pageContext.request.contextPath}/Servlet?accion=modificar" method="POST">
             <label for="nombre">Nombre
                 <input class="form-input" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre" required> 
             </label>
@@ -20,7 +20,7 @@
              </label>
              
              <label for="mail">Mail
-                 <input class="form-input" id="mail" type="email" name="mail" value="<%=session.getAttribute("mail")%>" readonly="true"> 
+                 <input class="form-input" id="mail" type="email" name="mail" value="${mail}" readonly="true"> 
              </label>
              
              <label for="password">Contraseña

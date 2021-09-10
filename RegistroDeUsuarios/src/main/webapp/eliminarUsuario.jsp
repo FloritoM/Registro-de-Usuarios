@@ -12,10 +12,10 @@
     <body>
         <h1>Eliminacion de Usuario</h1>
         <div class="wrapper">
-           <form action="/RegistroDeUsuarios/Servlet" method="GET">
+           <form action="${pageContext.request.contextPath}/Servlet" method="GET">
               <label for="email">
                 <span>Confirma presionando "Enviar" </span><br/>
-                <input type="mail" name="mail" value="<%=session.getAttribute("mail")%>" readonly="true"/>
+                <input type="mail" name="mail" value="${mail}" readonly="true"/>
                 <input id="btn-submit" type="submit" />
               </label>
           </form> 

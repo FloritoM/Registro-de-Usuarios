@@ -6,8 +6,8 @@ import org.apache.commons.dbcp2.BasicDataSource;
 
 public class Conexion {
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/usuarios?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
-    private static final String JDBC_USER = "admin";
-    private static final String JDBC_PASSWORD = "admin";
+    private static final String JDBC_USER = "root";
+    private static final String JDBC_PASSWORD = "123456789";
     
    public static Connection getConnection() throws SQLException{
         return DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);

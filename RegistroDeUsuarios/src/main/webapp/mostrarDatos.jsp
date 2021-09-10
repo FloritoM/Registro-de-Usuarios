@@ -12,21 +12,21 @@
         <h1>DATOS</h1>
         <div class="wrapper">
             <table class="table">
-                <tr class="row">
+                <tr class="row"> <%-- <%=session.getAttribute("nombre")%> --%>
                     <td class="left-td">Nombre</td>
-                    <td class="right-td"><%=session.getAttribute("nombre")%></td>
+                    <td class="right-td">${nombre}</td>
                 </tr>
                 <tr class="row">
                     <td class="left-td">Apellido</td>
-                    <td class="right-td"><%=session.getAttribute("apellido")%></td>
+                    <td class="right-td">${apellido}</td>
                 </tr>
                 <tr class="row">
                     <td class="left-td">Mail</td>
-                    <td class="right-td"><%=session.getAttribute("mail")%></td>
+                    <td class="right-td">${mail}</td>
                 </tr>
                 <tr class="row">
                     <td class="left-td">Contraseña</td>
-                    <td class="right-td"><%=session.getAttribute("password")%></td>
+                    <td class="right-td">${password}</td>
                 </tr>
             </table>
         </div>
